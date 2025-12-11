@@ -70,7 +70,7 @@ with col_center:
     else:
         st.success("🎉 Sesi Pomodoro telah selesai! Kamu hebat!")
         if st.button("Kembali ke Dashboard", use_container_width=True):
-            st.switch_page("pages/1_Dashboard.py")
+            st.switch_page("pages/1_Home.py")
 
 st.markdown(
     """
@@ -81,3 +81,4 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
