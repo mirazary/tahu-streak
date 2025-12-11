@@ -12,7 +12,7 @@ def oauth2_login():
 
     result = oauth2.authorize_button(
         "Login",
-        redirect_uri = st.secrets["REDIRECT_URI"]
+        redirect_uri="https://tahu-streak.streamlit.app/",
         scope="openid email profile",
         key="google_login"
     )
@@ -36,4 +36,5 @@ def oauth2_login():
         "email": userinfo.get("email"),
         "name": userinfo.get("name")
     }
+
 
