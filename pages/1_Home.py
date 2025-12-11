@@ -73,7 +73,7 @@ with st.sidebar:
     st.markdown("---")
     if st.button("🚪 Logout", use_container_width=True):
         st.session_state.clear()
-        st.switch_page("Home.py")
+        st.switch_page("Login.py")
 
 st.markdown("<h1 class='title'> Rumah TAHU</h1>", unsafe_allow_html=True)
 st.markdown(f"<p class='subt'>Selamat datang, <b>{st.session_state.user_name}</b> 👋</p>", unsafe_allow_html=True)
@@ -155,3 +155,4 @@ except:
 
 # --- Footer ---
 st.markdown("<br><p style='text-align:center; color:#aaa;'>© 2025 MIWZAAR · TAHU Project</p>", unsafe_allow_html=True)
+
